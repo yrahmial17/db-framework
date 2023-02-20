@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/09a29dd9ca.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<div class="spawn-wrapper">
+    <div class="map-wrapper">
+        <div class="spawn-markers">
+            <i class="fas fa-map-marker-alt Sbtn markerBtn mrpd tooltipped" data-position="top" data-tooltip="MRPD"
+                data-location="mrpd" data-housecheck="Not a house man" data-info="Mission Row Police Department"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn mirror tooltipped" data-position="top"
+                data-tooltip="Mirror Park" data-location="mirror" data-housecheck="Not a house man"
+                data-info="Mirror Park"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn airport tooltipped" data-position="top"
+                data-tooltip="Adnasdnsalkdnsakl" data-location="airport" data-housecheck="Not a house man"
+                data-info="Los santos International Airport"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn beach tooltipped" data-position="top" data-tooltip="Beach"
+                data-location="beach" data-housecheck="Not a house man" data-info="beach"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn sandy tooltipped" data-position="top"
+                data-tooltip="Sandy Shores" data-location="sandy" data-housecheck="Not a house man"
+                data-info="Sandy Shores"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn prison tooltipped" data-position="top"
+                data-tooltip="Bolingbroke Penitentiary" data-location="prison" data-housecheck="Not a house man"
+                data-info="Bolingbroke Penitentiary"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn paleto tooltipped" data-position="top"
+                data-tooltip="Paleto Bay" data-location="paleto" data-housecheck="Not a house man"
+                data-info="Paleto Bay"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn hospital tooltipped" data-position="top"
+                data-tooltip="Integrity" data-location="hospital" data-housecheck="Not a house man"
+                data-info="Integrity"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn motel tooltipped" data-position="top"
+                data-tooltip="Pink Cage" data-location="motel" data-housecheck="Not a house man"
+                data-info="Pink Cage"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn mountzonah tooltipped" data-position="top"
+                data-tooltip="Rockford Hills" data-location="mountzonah" data-housecheck="Not a house man"
+                data-info="Rockford Hills"></i>
+            <i class="fas fa-map-marker-alt Sbtn markerBtn altaapartments tooltipped" data-position="top"
+                data-tooltip="Alta Street Apartments" data-location="altaapartments" data-housecheck="Not a house man"
+                data-info="Alta Street Apartments"></i>
+        </div>
+        <button type="button" class="Sbtn lastLocation" data-location="last" data-info="Last Location"><i class="fas fa-map-marker-alt"></i> Last Location</button>
+    </div>
+    <div class="house-box">
+        <div class="house-name-sticky">
+            <span class="house-name">owned properties</span>
+            <div class="line"></div>
+        </div>
+        <div class="house-buttons">
+            <button class="house-btn Sbtn" data-housecheck="House" data-info="YM HOuse" data-location="House" data-x=123 data-y=13 data-z=123>$Shit</button>`
+
+        </div>
+    </div>
+    <div class="spawn-box">
+        <div class="box-details">
+            <span class="spawn-name"></span>
+            <div class="spawn-buttons">
+                <button class="spawn-btn green spawnBtn"><i class="fas fa-map-marked-alt"></i>Spawn
+                    Now</button>
+                <button class="spawn-btn red" onclick="GoBack()"><i class="fas fa-exclamation-circle"></i>Go Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="interface.js" type="text/javascript"></script>
+
+</body>
+
+</html>

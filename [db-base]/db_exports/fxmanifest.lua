@@ -1,0 +1,11 @@
+fx_version 'cerulean'
+games {'gta5'}
+client_script "@db-base/errors/client.lua"
+client_script 'client.lua'
+server_script 'server.lua'
+export "GetClosestNPC"
+export "IsPedNearCoords"
+export "GetData"
+export "money"
+export "canPedBeUsed"
+export "GlobalObject"

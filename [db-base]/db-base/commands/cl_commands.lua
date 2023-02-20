@@ -1,0 +1,1 @@
+DBCore = DBCore or {}

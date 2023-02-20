@@ -1,0 +1,34 @@
+-- function OnPlayerConnecting(name, setKickReason, deferrals)
+--     deferrals.defer();
+--     local pSrc = source;
+--     Citizen.Wait(100);
+--     local pName = GetPlayerName(pSrc);
+--     local pSteam = GetPlayerIdentifiers(pSrc)[1];
+--     AddLog(pSrc, "player-login", pName.." connecting to db-framework");
+--     if pName and pSteam ~= nil then
+--         exports.db_database:execute("SELECT * FROM character_bans WHERE steam_id = ?", {pSteam}, function(data)
+--             if data[1] then
+--                 local reason = data[1].reason
+--                 if reason == "" then
+--                     reason = "Wearing Lacoste and shit(bitch yeah)"
+--                 end
+--                 print("^1[BANNED PLAYER] Player " .. pName .. " tried to join, but was banned for: " .. reason .. "^0");
+--                 local fuckoff = "**[BANNED PLAYER] Player " .. pName .. " tried to join, but was banned for: " .. reason.."**"
+--                 AddLog(pSrc, "player-left", fuckoff)
+--                 deferrals.done("\n\nYou have been permanently banned | Reason: " .. string.upper(reason));
+--                 CancelEvent();
+--                 return;
+--             else
+--                 deferrals.done();
+--                 local LogInfo =  pName.. " is loading into the server"
+--                 AddLog(pSrc, "player-login", LogInfo)
+--             end
+--         end)
+--     else
+--         deferrals.done('\n\nIt doesn\'t look like you have steam open.\nPlease restart your FiveM client with steam open.');
+--         CancelEvent();
+--         return;
+--     end
+-- end
+
+-- AddEventHandler('db-playerConnecting', OnPlayerConnecting)

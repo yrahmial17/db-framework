@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4vh;
+    font-weight: bold;
+    user-select: none;
+}
+
+.container {display:none; font-family: 'Heebo', sans-serif;}
+.fuckingImage {width: 10vh; position: relative; left: 1vh;top:1vh; border-radius: 5vh;}
+.SettingsBtn {font-size: 2vh; position: absolute; left: 97%; top: 4.7vh;}
+.SettingsBtn:hover {
+    color: #91252f;
+    transition: 1s;
+}
+
+.characters-list{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+    left: 0;
+    /*background: #232b34; #30475e */
+    z-index: 9999;
+    /* border: .2vh solid lightskyblue; */
+}
+
+.characters-list .FuckingMain{
+    display: flex;
+    /* overflow:hidden; */
+    border-radius: 1vh;
+    margin-left:10vh;
+}
+
+.characters-list .FuckingMain .character {
+    width: 25vh;
+    height: 7vh;
+    margin: 1.5vh;
+    transition: .2s linear;
+    white-space: nowrap;
+    position: relative;
+    right: 100%;
+    border: .1vh solid lightgray;
+    background-color: #202225;
+    box-shadow: 0 0 .5vh .3vh black;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: .19vh;
+}
+
+.characters-list .FuckingMain .character:hover {
+    border: .2vh solid lightgray;
+    box-shadow: 0 0 .8vh .5vh black;
+}
+
+.characters-list .FuckingMain .character .slot-name {
+    color: lightgray;
+    font-size:2.3vh;
+    font-family: 'Heebo', sans-serif;
+    line-height: 6.8vh;
+    text-align: center;
+}
+
+.characters-list .FuckingMain .character .create-button {
+    font-weight: bold;
+    font-size:2.3vh;
+    color: white;
+    text-align: center;
+    padding: 2vh;
+}
+
+.charInfo {
+    font-size:1.4vh;
+    text-align: left;
+    line-height: .6vh;
+    margin: -5vh -2vh;
+    padding: 3vh;
+}
+
+#charBtns {
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    font-weight: 900;
+}
+
+.selectChar {
+    width: 7vh;
+    height: 2.5vh;
+    color: #609bd2;
+    border: 0.2vh solid #609bd2;
+    border-radius: 0.3vh;
+    background: none;
+    font-size: 1.4vh;
+}
+
+.deleteChar {
+    width: 7vh;
+    height: 2.5vh;
+    color: #cc5252;
+    border: 0.2vh solid #cc5252;
+    border-radius: 0.3vh;
+    background: none;
+    margin-left: 4vh;
+    font-size: 1.4vh;
+}
+
+hr {
+    margin: .5vh 0vh;
+    width: 23vh;
+    height: .1vh;
+    background-color: #ccc;
+    border: none;
+}
+
+#createCharacter, #deleteCharacter {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    height: 20vh;
+    background-color: rgba(29,29,29,255);
+    border-radius: 0.9%;
+    border: 0.3vh solid #c82135;
+}
+
+.title {
+    padding: 1vh;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+    /* font-size: 1vh; */
+    color: white;
+    width: 12vh;
+}
+
+#names {
+    display: flex;
+    margin-left: 5vh;
+    /* border-bottom: 0.2vh solid #156dc3; */
+}
+
+#firstname {
+    font-size: 1.4vh;
+    border-bottom: 0.2vh solid #c82135;
+}
+
+#lastname {
+    font-size: 1.4vh;
+    margin-left: 6vh;
+    border-bottom: 0.2vh solid #c82135;
+}
+
+#moreinfo {
+    display: flex;
+    margin-left: 5vh;
+    margin-top: 3vh;
+}
+
+#date {
+    margin-left: 6vh;
+    font-size: 1.3vh;
+    border-bottom: 0.2vh solid #c82135;
+}
+
+#sex {
+    width: 12vh;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 0.2vh solid #c82135;
+    font-size: 1.4vh;
+    color: white;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    margin-right: -.2vh;
+    color: white;
+    /* background-color: white; */
+    filter: invert(100%);
+}
+
+#Settings {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    min-height: fit-content;
+    max-height: 65vh;
+    background-color: rgba(29,29,29,255);
+    border-radius: 0.9%;
+    border: 0.3vh solid #c82135;
+    overflow: hidden;
+}
+
+/* #SettingsCheckBox {
+    position: relative;
+    right: 5vh;
+} */
+
+#Settings button {
+    background-color: #30475e;
+    border: none;
+    border-radius: .5vh;
+    color: white;
+    font-size: 1.4vh;
+    height: 4vh;
+    text-transform: uppercase;
+    margin-left: 16%;
+    width: 25%;
+}
+
+#Settings hr {
+    margin: .5vh 2vh;
+    width: 36vh;
+    height: .1vh;
+    background-color: #ccc;
+    border: none;
+}
+
+#Settings button:hover {
+    background-color: #f2a365;
+    border-radius: .4vh;
+    transition: all 0.2s ease;
+}
+
+#Settings button.saveSettings:hover {
+    background-color: #95ef77;
+    border-radius: .4vh;
+    transition: all 0.2s ease;
+}
+
+#Settings button.saveSettings {
+    background-color: #30475e;
+    color: white;
+    font-size: 1.4vh;
+    text-transform: uppercase;
+}
+
+#Settings #Slots {
+    color: white;
+    display: grid;
+    grid-template-columns: 8.5vh 2.5vh auto;
+    grid-template-rows: auto;
+    margin-left:30%;
+}
+
+#Settings #Slots > p {
+    position: relative;
+    top:-1.3vh;
+    left: -1.9vh;
+}
+
+#Settings #Slots > i {
+    position: relative;
+    top: .4vh;
+    left: -.4vh;
+}
+
+input[type='checkbox'] {
+    margin-bottom: 2%;
+    color: rgba(220, 220, 220, 1);
+}
+
+
+#buttons {
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 12vh;
+    font-weight: 900;
+}
+
+#DelBtns {
+    display: flex;
+    margin-top: 6vh;
+    margin-left: 12vh;
+    font-weight: 900;
+}
+
+
+.submit {
+    width: 7vh;
+    height: 2.5vh;
+    color: #609bd2;
+    border: 0.2vh solid #609bd2;
+    border-radius: 0.3vh;
+    background: none;
+    font-size: 1.4vh;
+}
+
+.delete {
+    width: 7vh;
+    height: 2.5vh;
+    color: #609bd2;
+    border: 0.2vh solid #609bd2;
+    border-radius: 0.3vh;
+    background: none;
+    font-size: 1.4vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cancel {
+    width: 7vh;
+    height: 2.5vh;
+    color: #f04242;
+    border: 0.2vh solid #f04242;
+    border-radius: 0.3vh;
+    background: none;
+    margin-left: 3vh;
+    font-size: 1.4vh;
+}
+
+option {
+    color: white;
+    background-color:#22303d;
+}
+
+#cash, #bank {
+    color: #5d8b66;
+}
+
+.notify {
+    margin: 1rem 0 1rem 1rem;
+    background-color:#22303d;
+    width: 23vh;
+    height: auto;
+    word-wrap: break-word;
+    border-radius: .5vh;
+    padding: 1rem;
+    box-shadow: 1.1vh 1vh 5.8vh -2.2vh rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* #PlayerList {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    min-height: 40vh;
+    max-height: 65vh;
+    background-color: rgba(29,29,29,255);
+    border-radius: .54vh;
+    border: 0.3vh solid #1c1c1c;
+    font-family: monospace;
+    overflow: scroll;
+}
+
+#PlayerList #back {
+    background-color: #30475e;
+}
+
+#PlayerList #back #img {
+    width: 12vh;
+    margin-left: 13.5vh;
+}
+
+#PlayerList #line {
+    height: .3vh;
+    width: 90%;
+    border-radius: .3vh;
+    margin-left: 2vh;
+    background-color: #30475e;
+}
+
+#PlayerList #Count {
+    transform: translate(18vh, 0);
+    background-color: #30475e;
+    border-radius: .3vh;
+    width: fit-content;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+#PlayerList #Players {
+    border-radius: .3vh;
+    white-space: nowrap;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Heebo', sans-serif;
+}
+
+#PlayerList #Players #Player {
+    position: relative;
+    margin-top:1vh;
+    float: center;
+}
+
+#PlayerList #Players #Player #steam {
+    position: relative;
+    left: 2vh;
+}
+
+#PlayerList #Players #Player #discord {
+    position: absolute;
+    left: 17vh;
+}
+
+#PlayerList #Players #Player #ID {
+    position: absolute;
+    left: 37vh;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+.PlayerList {
+	display: none;
+	font-family: 'Roboto', sans-serif;
+    /* Heebo */
+	overflow: hidden;
+	position: absolute;
+	width: 226px;
+	height: 85px;
+	
+	background: #333E4C;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 8px;
+	top: 100px;
+  right: 30px;
+}
+
+.playercount {
+	margin-top: 8px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-size: 36px;
+}
+
+.playercount span {
+  font-size: 18px;
+}
+
+
+
+.init {
+    display: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.discordapp.com/attachments/574261672215052308/774405329991106561/Toxic123312.png);
+  background-size: 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -10vh;
+  z-index: 9999;
+}
+
+.playButton {
+    width: 15vh;
+    height: 7vh;
+    background-color:#202225;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 65vh;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    border-radius: .4vh;
+    cursor: pointer;
+}
+
+.playButton:hover {
+    box-shadow: 1px 1px 5px 2px #000000;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+
+.playText {
+    font-size: 5vh;
+    color: white;
+}

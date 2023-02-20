@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/8e4478a165.js" crossorigin="anonymous"></script>
+    </head>
+    <body style=" background: rgba(0,0,0, 0)"> 
+        <!-- #13202e -->
+        <div class="container">
+            <!-- <div class="init">
+                <div class="logo"></div>
+                <div class="playButton"><span class="playText">Play</span></div>
+            </div> -->
+            <img class="fuckingImage" src="https://cdn.discordapp.com/attachments/574261672215052308/774405329991106561/Toxic123312.png">
+            <div class="SettingsBtn"><i class="fas fa-cogs"></i></div>
+            <div class="characters-list">
+                <div class="FuckingMain">
+                    <div class="character" id="cid-1" data-charid="1">
+                        <div class="create-button" id="create-cid-1" data-cid="1">Empty Slot</div>
+                    </div>    
+                    <div class="character" id="cid-2" data-charid="2">
+                        <div class="create-button" id="create-cid-2" data-cid="2">Empty Slot</div>
+                    </div>
+
+                    <div class="character" id="cid-3" data-charid="3">
+                        <div class="create-button" id="create-cid-3" data-cid="3">Empty Slot</i></div>
+                    </div>
+
+                    <div class="character" id="cid-4" data-charid="4">
+                        <div class="create-button" id="create-cid-4" data-cid="4">Empty Slot</div>
+                    </div>
+                </div>
+            </div>
+            <div id="createCharacter">
+                <div class="title">Exotic Roleplay - V1</div>
+                <div id="names">
+                    <input id="firstname" type="text" placeholder="First Name">
+                    <input id="lastname" type="text" placeholder="Last Name">    
+                </div>
+                <div id="moreinfo">
+                    <select id="sex">
+                        <option value="Male" selected>Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <input id="date" type="date">
+                </div>
+                <div id="buttons">
+                    <button class="submit">SUBMIT</button>
+                    <button class="cancel">CANCEL</button>
+                </div>
+            </div>
+            <div id="deleteCharacter">
+                <div class="title">ARE YOU SURE YOU WANT TO DELETE CHARACTER NUMBER 1?</div>
+                <div id="DelBtns">
+                    <button class="delete">DELETE</button>
+                    <button class="cancel">CANCEL</button>
+                </div>
+            </div>
+            <div id="Settings">
+                <div class="title">
+                    Multicharacter - Settings
+                </div>
+                <div id="SettingsCheckBox">
+                    <hr>
+                    <br>
+                    <!-- <input type="checkbox" checked name="Peds"/> Peds 
+                    <br> -->
+                    <input type="checkbox" unchecked name="Scoreboard"/> PlayerList
+                    <!-- <br>
+                    <select id="Slots">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="" checked name="Slots"/> Slots -->
+                    <br>
+                    <input type="checkbox" unchecked name="Background"/> Background
+                    <br>
+                    <input type="checkbox" unchecked name="Background-dark"/> Dark Background
+                    <br>
+                    <input type="checkbox" unchecked name="slotColor"/> Slots Color(Dark)
+                    <br>
+                    <input type="checkbox" unchecked name="opacity"/> Slots Opacity
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="title">
+                        Slots
+                    </div>    
+                    <hr>
+                    <br>
+                    <div id="Slots">
+                        <input type="checkbox" checked name="Slots-1"/><i class="fas fa-male"></i><p>1</p>
+                        <input type="checkbox" checked name="Slots-2"/><i class="fas fa-male"></i><p>2</p>
+                        <input type="checkbox" checked name="Slots-3"/><i class="fas fa-male"></i><p>3</p>
+                        <input type="checkbox" checked name="Slots-4"/><i class="fas fa-male"></i><p>4</p>
+                    </div>
+                    <hr>
+                    <br>
+                    <button type="button" class="saveSettings">Save</button>
+                    <button type="button" onclick="$('#Settings').fadeOut();" class="exitSettings">Exit</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!-- <div id="PlayerList">
+                <div id="back">
+                    <img id="img" src="https://cdn.discordapp.com/attachments/936230287564754984/936320230865641512/RERE.png">
+                </div>
+                <br>
+                <div id="Count">62/64</div>
+                <br>
+                <div id="line"></div>
+                <div id="Players">
+                    <div id="Player"><span id="steam">YMM</span><span id="discord">YM#9999</span><span id="ID">5</span></div>
+                </div>
+            </div> -->
+            <div class="PlayerList">
+                <div class="playercount"></div>
+          </div>          
+        </div>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="interface.js"></script>
+    </body>
+</html>
