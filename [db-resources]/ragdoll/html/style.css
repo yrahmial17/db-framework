@@ -1,0 +1,55 @@
+body {
+    /* background: black;  */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+body {
+    font-family: 'Heebo', sans-serif;
+    overflow: hidden;
+    /* display: none; */
+}
+/* Text Overlays */
+
+.centertextwrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.countdown {
+    margin-top: 89.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vh;
+    text-align: center;
+    color: white;
+    /* font-family: 'Heebo', sans-serif; */
+    font-weight: bold;
+    font-size: 2vh;
+    /* text-shadow: 0px 0px 5px black; */
+}
+
+.respawnlable {
+    margin-top: 30vh;
+    /* margin-left: auto; */
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    background-color: rgba(51, 112, 165, 0.7);
+    border-right: 1px solid rgba(25,56,82,0.5);
+    border-bottom: 3px solid rgba(25,56,82,0.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: .4vh;
+}
+
+.red {
+    color: #d82101fb;
+}
