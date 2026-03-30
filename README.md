@@ -12,7 +12,8 @@ Get full explanations about all functions and stay updated:
 * **Direct Help:** DM `YM#9894`
 
 ##Documentation
-```ini
+
+```lua
   [self-vars] :
     [1]   _char.source -- returns player id
     [2]   _char.cid -- returns character id.
