@@ -3,7 +3,7 @@
 
 `db-framework` is a high-performance, custom-built framework designed for serious RolePlay servers. It focuses on optimization, ease of use for developers, and a seamless player experience.
 
-### 🚀 Performance
+### Performance ###
 * **Full-server idle/run:** `0.30MS` - (core runs on 0.0MS)
 * Built for scalability and stability.### 🔗 Stay Connected & Support
 Get full explanations about all functions and stay updated:
@@ -11,7 +11,7 @@ Get full explanations about all functions and stay updated:
 * **YM Studio:** [Join YM Studio](https://discord.gg/XBGJUrhbtK)
 * **Direct Help:** DM `YM#9894`
 
-##Documentation
+### Documentation ###
 
 ```lua
   [self-vars] :
@@ -35,7 +35,7 @@ Get full explanations about all functions and stay updated:
     [18]  _char.twitter -- returns character twitter name.
     [19]  _char.fullname -- returns character full name.
 ```
-```ini
+```lua
 [self-functions] :
 [1]   _char:needs() -- returns character needs.
 [1.1] _char:needs().hunger -- returns character hunger.
