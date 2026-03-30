@@ -5,6 +5,6 @@ You have full explanation about all functions and more in our discord ya'll welc
 
 DM YM#9894 for help
 
-DB Framework server running on 0.30MS!
+DB Framework full-server runs on 0.30MS!
 
 YM Studio: https://discord.gg/XBGJUrhbtK
