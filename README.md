@@ -12,7 +12,7 @@ Get full explanations about all functions and stay updated:
 * **Direct Help:** DM `YM#9894`
 
 ##Documentation
-``
+```ini
   [self-vars] :
     [1]   _char.source -- returns player id
     [2]   _char.cid -- returns character id.
@@ -33,7 +33,7 @@ Get full explanations about all functions and stay updated:
     [17]  _char.bloodtype -- returns character blood type.
     [18]  _char.twitter -- returns character twitter name.
     [19]  _char.fullname -- returns character full name.
-``
+```
 ```ini
 [self-functions] :
 [1]   _char:needs() -- returns character needs.
